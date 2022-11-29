@@ -91,10 +91,10 @@ properties:
   iommus:
     maxItems: 1
 
-  dr_mode:
-    enum:
-      - host
-      - otg
+  wakeup-source:
+    $ref: /schemas/types.yaml#/definitions/flag
+    description:
+      Indicate this device has wakeup capabilities.
 
 required:
   - compatible
